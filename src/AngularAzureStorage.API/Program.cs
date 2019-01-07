@@ -30,6 +30,8 @@ namespace AngularAzureStorage.API
         {
             services.AddMvc();
 
+            services.AddHttpContextAccessor();
+
             services.AddCustomSignalR()
                 .AddCustomSwagger()
                 .AddMediatR(typeof(Startup));

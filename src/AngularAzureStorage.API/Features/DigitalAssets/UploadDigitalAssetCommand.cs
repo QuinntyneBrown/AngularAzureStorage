@@ -41,7 +41,7 @@ namespace AngularAzureStorage.API.Features.DigitalAssets
                 var digitalAssetUrls = new List<string>();
                 var storageAccount = CloudStorageAccount.Parse(_configuration["Storage:DefaultConnection:StorageConnectionString"]);
                 var blobClient = storageAccount.CreateCloudBlobClient();
-                var container = blobClient.GetContainerReference($"web$");
+                var container = blobClient.GetContainerReference($"$web");
 
                 BlobContainerPermissions permissions = await container.GetPermissionsAsync();
 
@@ -72,6 +72,8 @@ namespace AngularAzureStorage.API.Features.DigitalAssets
                         {
                             using (var targetStream = new MemoryStream())
                             {
+                                var targetStreamLength = targetStream.Length;
+
                                 await section.Body.CopyToAsync(targetStream);
 
                                 var filename = $"{contentDisposition.FileName}".Trim(new char[] { '"' }).Replace("&", "and");

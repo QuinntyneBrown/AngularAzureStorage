@@ -37,23 +37,12 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { PrimaryHeaderComponent } from './primary-header.component';
 import { QuillTextEditorComponent } from './quill-text-editor.component';
 import { CommonModule } from '@angular/common';
-import { AgGridModule } from 'ag-grid-angular';
-import { DeleteCellComponent } from './delete-cell.component';
-import { AutoCompleteChipListComponent } from './auto-complete-chip-list.component';
-import { TranslateModule } from '@ngx-translate/core';
-import { EditCellComponent } from './edit-cell.component';
-import { CheckboxCellComponent } from './checkbox-cell.component';
-import { StarCellComponent } from './star-cell.component';
+
 
 @NgModule({
   declarations: [
-    AutoCompleteChipListComponent,
-    CheckboxCellComponent,
-    DeleteCellComponent,
-    EditCellComponent,
     PrimaryHeaderComponent,
     QuillTextEditorComponent,
-    StarCellComponent
   ],
   imports: [
     MatAutocompleteModule,
@@ -91,15 +80,7 @@ import { StarCellComponent } from './star-cell.component';
 
     CommonModule,
     FormsModule,
-    ReactiveFormsModule,
-    TranslateModule,
-
-    AgGridModule.withComponents([
-      CheckboxCellComponent,
-      DeleteCellComponent,
-      EditCellComponent,
-      StarCellComponent
-    ])
+    ReactiveFormsModule
   ],
   exports: [
     MatAutocompleteModule,
@@ -133,15 +114,10 @@ import { StarCellComponent } from './star-cell.component';
     MatTableModule,
     MatTabsModule,
     MatToolbarModule,
-    MatTooltipModule,
-
-    AgGridModule,
+    MatTooltipModule,   
     FormsModule,
     ReactiveFormsModule,
-
-    AutoCompleteChipListComponent,
-    CheckboxCellComponent,
-    DeleteCellComponent,
+    
     PrimaryHeaderComponent,
     QuillTextEditorComponent,
     PrimaryHeaderComponent

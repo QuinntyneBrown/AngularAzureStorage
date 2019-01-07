@@ -44,7 +44,11 @@ export class DigitalAssetService {
   }
 
   public upload(options: { data: FormData }): Observable<{ digitalAssetIds: number[] }> {
-    
+
+    alert("working?");
+
+    alert(this._baseUrl);
+
     return this._client.post<{ digitalAssetIds: number[] }>(`${this._baseUrl}api/digitalAssets/upload`,
       options.data);
   }

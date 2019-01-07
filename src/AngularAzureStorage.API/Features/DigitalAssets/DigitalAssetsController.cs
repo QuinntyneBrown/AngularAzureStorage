@@ -1,6 +1,6 @@
 using MediatR;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Threading.Tasks;
 
 namespace AngularAzureStorage.API.Features.DigitalAssets
@@ -15,6 +15,17 @@ namespace AngularAzureStorage.API.Features.DigitalAssets
 
         [HttpPost("upload"), DisableRequestSizeLimit]
         public async Task<ActionResult<UploadDigitalAssetCommand.Response>> Upload()
-            => await _mediator.Send(new UploadDigitalAssetCommand.Request());        
+        {
+
+            try
+            {
+                var response = await _mediator.Send(new UploadDigitalAssetCommand.Request());
+
+                return response;
+            }catch (Exception e)
+            {
+                throw e;
+            }
+        }        
     }
 }
