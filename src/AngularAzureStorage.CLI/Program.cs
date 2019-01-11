@@ -52,11 +52,13 @@ namespace AngularAzureStorage.CLI
             Parser.Default.ParseArguments<Options>(args)
                 .MapResult(x =>
                 {
-                    request.Directory = x.Directory;
+                    request.Directory = string.IsNullOrEmpty(x.Directory) ? System.Environment.CurrentDirectory : x.Directory;
+                    request.CloudStorageConnectionString = x.CloudStorageConnectionString;
                     return 1;
                 }, x => 0);
 
             _mediator.Send(request).Wait();
+            
             return 1;
         }
 

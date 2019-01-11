@@ -6,6 +6,7 @@ namespace AngularAzureStorage.CLI
     {
         [Option("directory", Required = false, HelpText = "Directory")]
         public string Directory { get; set; }
-        public string CurrentDirectory { get; set; } = System.Environment.CurrentDirectory;
+        [Option("connectionString", Required = false, HelpText = "Connection String")]
+        public string CloudStorageConnectionString { get; set; }
     }
 }
