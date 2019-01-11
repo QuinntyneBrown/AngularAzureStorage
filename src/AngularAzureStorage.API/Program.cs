@@ -47,7 +47,7 @@ namespace AngularAzureStorage.API
                 .UseSwaggerUI(options
                 =>
                 {
-                    options.SwaggerEndpoint("/swagger/v1/swagger.json", "Note Taking App API");
+                    options.SwaggerEndpoint("/swagger/v1/swagger.json", "Angular Azure Storage API");
                     options.RoutePrefix = string.Empty;
                 });
         }

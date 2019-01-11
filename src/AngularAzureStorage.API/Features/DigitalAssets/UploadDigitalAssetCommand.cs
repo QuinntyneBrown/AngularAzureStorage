@@ -72,7 +72,6 @@ namespace AngularAzureStorage.API.Features.DigitalAssets
                         {
                             using (var targetStream = new MemoryStream())
                             {
-                                var targetStreamLength = targetStream.Length;
 
                                 await section.Body.CopyToAsync(targetStream);
 
@@ -81,6 +80,8 @@ namespace AngularAzureStorage.API.Features.DigitalAssets
                                 var blockBlob = container.GetBlockBlobReference(filename);
 
                                 blockBlob.Properties.ContentType = section.ContentType;
+
+                                targetStream.Position = 0;
 
                                 await blockBlob.UploadFromStreamAsync(targetStream);
 

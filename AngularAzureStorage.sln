@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AngularAzureStorage.Core", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AngularAzureStorage.API", "src\AngularAzureStorage.API\AngularAzureStorage.API.csproj", "{6ABCED81-3D86-4B28-924A-04BFACB6D309}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AngularAzureStorage.SPA", "src\AngularAzureStorage.SPA\AngularAzureStorage.SPA.csproj", "{819FFD48-3050-4938-9874-B729377CAA1A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AngularAzureStorage.CLI", "src\AngularAzureStorage.CLI\AngularAzureStorage.CLI.csproj", "{ABA8BA6A-EAF1-4321-8748-4DD2C8318538}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,18 +45,18 @@ Global
 		{6ABCED81-3D86-4B28-924A-04BFACB6D309}.Release|x64.Build.0 = Release|Any CPU
 		{6ABCED81-3D86-4B28-924A-04BFACB6D309}.Release|x86.ActiveCfg = Release|Any CPU
 		{6ABCED81-3D86-4B28-924A-04BFACB6D309}.Release|x86.Build.0 = Release|Any CPU
-		{819FFD48-3050-4938-9874-B729377CAA1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{819FFD48-3050-4938-9874-B729377CAA1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{819FFD48-3050-4938-9874-B729377CAA1A}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{819FFD48-3050-4938-9874-B729377CAA1A}.Debug|x64.Build.0 = Debug|Any CPU
-		{819FFD48-3050-4938-9874-B729377CAA1A}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{819FFD48-3050-4938-9874-B729377CAA1A}.Debug|x86.Build.0 = Debug|Any CPU
-		{819FFD48-3050-4938-9874-B729377CAA1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{819FFD48-3050-4938-9874-B729377CAA1A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{819FFD48-3050-4938-9874-B729377CAA1A}.Release|x64.ActiveCfg = Release|Any CPU
-		{819FFD48-3050-4938-9874-B729377CAA1A}.Release|x64.Build.0 = Release|Any CPU
-		{819FFD48-3050-4938-9874-B729377CAA1A}.Release|x86.ActiveCfg = Release|Any CPU
-		{819FFD48-3050-4938-9874-B729377CAA1A}.Release|x86.Build.0 = Release|Any CPU
+		{ABA8BA6A-EAF1-4321-8748-4DD2C8318538}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABA8BA6A-EAF1-4321-8748-4DD2C8318538}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABA8BA6A-EAF1-4321-8748-4DD2C8318538}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{ABA8BA6A-EAF1-4321-8748-4DD2C8318538}.Debug|x64.Build.0 = Debug|Any CPU
+		{ABA8BA6A-EAF1-4321-8748-4DD2C8318538}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{ABA8BA6A-EAF1-4321-8748-4DD2C8318538}.Debug|x86.Build.0 = Debug|Any CPU
+		{ABA8BA6A-EAF1-4321-8748-4DD2C8318538}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABA8BA6A-EAF1-4321-8748-4DD2C8318538}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABA8BA6A-EAF1-4321-8748-4DD2C8318538}.Release|x64.ActiveCfg = Release|Any CPU
+		{ABA8BA6A-EAF1-4321-8748-4DD2C8318538}.Release|x64.Build.0 = Release|Any CPU
+		{ABA8BA6A-EAF1-4321-8748-4DD2C8318538}.Release|x86.ActiveCfg = Release|Any CPU
+		{ABA8BA6A-EAF1-4321-8748-4DD2C8318538}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,7 +64,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{C01BCF8E-5BCA-4C29-AC7E-CB6FED06FF88} = {072CD9B0-1CFE-4E90-89DE-34FE1246888A}
 		{6ABCED81-3D86-4B28-924A-04BFACB6D309} = {072CD9B0-1CFE-4E90-89DE-34FE1246888A}
-		{819FFD48-3050-4938-9874-B729377CAA1A} = {072CD9B0-1CFE-4E90-89DE-34FE1246888A}
+		{ABA8BA6A-EAF1-4321-8748-4DD2C8318538} = {072CD9B0-1CFE-4E90-89DE-34FE1246888A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E0D4861D-1E18-4F3B-87BA-E01788D958D2}
